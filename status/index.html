@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta http-equiv="refresh" content="30">
+<title>日本住宅価格マップ — 稼働状況</title>
+<style>
+ :root { color-scheme: light dark; }
+ body { font-family:-apple-system,"Hiragino Sans",sans-serif; margin:0; padding:28px;
+        background:#0f1420; color:#e7ecf5; line-height:1.6; }
+ h1 { font-size:1.35rem; margin:0 0 4px; }
+ .stamp { color:#7d879c; font-size:.82rem; margin-bottom:22px; }
+ .three { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:16px; margin-bottom:26px; }
+ .seg { background:#161d2e; border:1px solid #232d44; border-radius:16px; padding:18px 20px; }
+ .seg-label { font-size:.78rem; letter-spacing:.14em; color:#7d879c; margin-bottom:10px; }
+ .seg-note { color:#8794ab; font-size:.84rem; margin-top:10px; }
+ .seg-big { font-size:2.6rem; font-weight:800; color:#7ee0a6; line-height:1; }
+ .seg-big .unit { font-size:1rem; font-weight:600; margin-left:6px; color:#5f8f76; }
+ .seg-next { font-size:1.02rem; font-weight:700; color:#e7ecf5; }
+ .status { display:inline-flex; align-items:center; gap:10px; font-size:1.5rem;
+            font-weight:700; padding:12px 20px; border-radius:14px; }
+ .busy { background:#123a24; color:#4ade80; }
+ .idle { background:#1a2438; color:#93b4e8; }
+ .off  { background:#3a1a1a; color:#f87171; }
+ .dot { width:12px; height:12px; border-radius:50%; background:currentColor; }
+ .busy .dot { animation:pulse 1.2s infinite; }
+ @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.25} }
+ .note { color:#7d879c; font-size:.9rem; margin:0 0 26px; }
+ .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); gap:18px; }
+ .card { background:#161d2e; border:1px solid #232d44; border-radius:14px; padding:16px 18px; }
+ .card h2 { font-size:.95rem; margin:0 0 10px; color:#9fb0cc; font-weight:600; }
+ table { width:100%; border-collapse:collapse; font-size:.86rem; }
+ td { padding:4px 6px; border-bottom:1px solid #232d44; vertical-align:top; }
+ ul { margin:0; padding-left:1.1rem; font-size:.88rem; }
+ li { margin-bottom:5px; }
+ .logline { font-family:ui-monospace,Menlo,monospace; font-size:.74rem; color:#93a3bd;
+             padding:2px 0; border-bottom:1px solid #1c2438; }
+ .mono { font-family:ui-monospace,Menlo,monospace; }
+ .dim { color:#6b7690; }
+ .done li { color:#7ee0a6; }
+</style></head><body>
+
+<h1>日本住宅価格マップ — 稼働状況</h1>
+<div class="stamp">最終更新 2026-08-02 11:20:32 ・ このページは30秒ごとに自動更新</div>
+
+<div class="three">
+  <div class="seg">
+    <div class="seg-label">いま</div>
+    <div class="status idle"><span class="dot"></span>待機中</div>
+    <div class="seg-note">待機中</div>
+  </div>
+  <div class="seg">
+    <div class="seg-label">やったこと</div>
+    <div class="seg-big">3<span class="unit">件</span></div>
+    <div class="seg-note">直近：「わたしの物件」— 第1段：登録と現在価値の推定</div>
+  </div>
+  <div class="seg">
+    <div class="seg-label">つぎにやること</div>
+    <div class="seg-next">「わたしの物件」— 第2段：新しい成約が出たら知らせる</div>
+    <div class="seg-note">次の実行でこれに着手します</div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <h2>常駐している仕組み</h2>
+    <table><tr><td>com.tokyoarhome.analyst</td><td>待機</td></tr><tr><td>com.tokyoarhome.dailybackup</td><td>待機</td></tr><tr><td>com.tokyoarhome.nightshift</td><td>待機</td></tr><tr><td>com.tokyoarhome.watchdog</td><td>待機</td></tr></table>
+  </div>
+
+  <div class="card">
+    <h2>いま抱えている仕事（8件）</h2>
+    <ul><li>「わたしの物件」— 第2段：新しい成約が出たら知らせる</li><li>週次シェア画像の自動生成</li><li>カード画像に地図のミニ図を入れられないか検討</li><li>タワーマンションの絞り込み — PLATEAU の建物高さで代替できるか</li><li>「割高」側も出す</li><li>無料枠を使い切ったあとの導線</li><li>valueGaps の単体テスト</li><li>本人確認の審査画面（自分用）</li></ul>
+  </div>
+
+  <div class="card done">
+    <h2>片付いた仕事（3件）</h2>
+    <ul><li>アプリ内フィードバック（利用者の声を集める仕組み）</li><li>フィードバックを watchdog で拾って知らせる</li><li>「わたしの物件」— 第1段：登録と現在価値の推定</li></ul>
+  </div>
+
+  <div class="card">
+    <h2>最近のレポート</h2>
+    <ul><li>night-2026-08-02_0949.md <span class='dim'>08/02 09:54</span></li><li>2026-08-02.md <span class='dim'>08/02 09:15</span></li></ul>
+  </div>
+
+  
+
+  
+</div>
+
+</body></html>

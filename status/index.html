@@ -44,23 +44,23 @@
 </style></head><body>
 
 <h1>日本住宅価格マップ — 运行状况</h1>
-<div class="stamp">最后更新 2026-08-03 21:31:00 · 本页每 30 秒自动刷新</div>
+<div class="stamp">最后更新 2026-08-03 21:34:47 · 本页每 30 秒自动刷新</div>
 
 <div class="health dim">改善循环：正常（最后一次完成：2026-08-03 21:04，0 小时前）</div>
 <div class="three">
   <div class="seg">
     <div class="seg-label">现在</div>
-    <div class="status idle"><span class="dot"></span>待命中</div>
-    <div class="seg-note">待命中</div>
+    <div class="status busy"><span class="dot"></span>工作中</div>
+    <div class="seg-note">監査所見 2 件をバックログに移しています（刚刚）</div>
   </div>
   <div class="seg">
     <div class="seg-label">已完成</div>
-    <div class="seg-big">10<span class="unit">件</span></div>
+    <div class="seg-big">9<span class="unit">件</span></div>
     <div class="seg-note">最近一件：把「偏贵」那一端也显示出来</div>
   </div>
   <div class="seg">
     <div class="seg-label">下一件</div>
-    <div class="seg-next">地区详情页放一张大的价格曲线</div>
+    <div class="seg-next">找租金数据源 —— 能算出收益率的话，这个 App 能回答的问题就变了</div>
     <div class="seg-note">下一轮就做这件</div>
   </div>
 </div>
@@ -70,23 +70,23 @@
     <h2>上一次用时 / 下一次预定</h2>
     <table>
       <tr><th></th><th>上一次</th><th>下一次</th></tr>
-      <tr><td>改善循环</td><td>25 分 08 秒（完了） · 21:04 结束</td><td class='mono'>马上</td></tr><tr><td>审计循环</td><td>0 分 00 秒（見送り（未着手21件）） · 20:03 结束</td><td class='mono'>22:03（还有 32 分钟）</td></tr>
+      <tr><td>改善循环</td><td>25 分 08 秒（完了） · 21:04 结束</td><td class='mono'>马上</td></tr><tr><td>审计循环</td><td>0 分 00 秒（見送り（未着手21件）） · 20:03 结束</td><td class='mono'>22:03（还有 29 分钟）</td></tr>
     </table>
   </div>
 
   <div class="card">
     <h2>常驻的定时任务</h2>
-    <table><tr><td>com.tokyoarhome.analyst</td><td>待命</td></tr><tr><td>com.tokyoarhome.audit</td><td>待命</td></tr><tr><td>com.tokyoarhome.dailybackup</td><td>待命</td></tr><tr><td>com.tokyoarhome.datawatch</td><td>待命</td></tr><tr><td>com.tokyoarhome.nightshift</td><td>待命</td></tr><tr><td>com.tokyoarhome.sense</td><td>待命</td></tr><tr><td>com.tokyoarhome.sharecard</td><td>待命</td></tr><tr><td>com.tokyoarhome.status</td><td>▶ 运行中</td></tr><tr><td>com.tokyoarhome.watchdog</td><td>待命</td></tr></table>
+    <table><tr><td>com.tokyoarhome.analyst</td><td>待命</td></tr><tr><td>com.tokyoarhome.audit</td><td>待命</td></tr><tr><td>com.tokyoarhome.dailybackup</td><td>待命</td></tr><tr><td>com.tokyoarhome.datawatch</td><td>待命</td></tr><tr><td>com.tokyoarhome.nightshift</td><td>▶ 运行中</td></tr><tr><td>com.tokyoarhome.sense</td><td>待命</td></tr><tr><td>com.tokyoarhome.sharecard</td><td>待命</td></tr><tr><td>com.tokyoarhome.status</td><td>待命</td></tr><tr><td>com.tokyoarhome.watchdog</td><td>待命</td></tr></table>
   </div>
 
   <div class="card">
-    <h2>待办（26 件）</h2>
-    <ul><li>地区详情页放一张大的价格曲线</li><li>PLATEAU 塔楼数据扩到东京以外</li><li>到车站的距离（第1步）：最近车站和步行分钟</li><li>到车站的距离（第2步）：查新建车站的影响能不能验证</li><li>塔楼（第0步）：查摇号倍率等公开数据存不存在</li><li>地図の分析ボタンが、1回開くだけで無料枠を何度も減らす（読んでいる最中に課金画面へ変わる）</li><li>同 — 分析を開く前に、残り回数を出して確認させる</li><li>留言板：没传到服务器也显示「发布成功」</li><li>别把网络失败说成「这一带成交少」第1步：区分读取成功和失败</li><li>同上 第2步：界面显示网络错误和重试</li><li>把12年前的中位数当「现在单价」显示 第1步：聚合层加上年份和年成交数</li><li>同上 第2步：剔除过旧的系列，保留的要在界面标年份</li><li>「5年」の伸びが「直近2年」より小さい市区町村が並んでいる — 基準窓を確かめる（調査）</li><li>カバー率のしきい値が、大都市の中心区を選択的に落としていないか（調査）</li><li>同 — 「測れていない街」を、画面から消さずに名前だけでも出す</li><li>札幌市の区が「北海道 中央区」と出る — 政令指定都市の市名が落ちている</li><li>表の「±」がサンプル誤差だと読まれる — 中身は測り方3通りの開き</li><li>戸建とマンションの「万円/㎡」は分母が違うのに、同じ表に並んでいる</li><li>`t()` 统一加参数标签，用类型防止顺序出错</li><li>价格单位「万」第1步：做统一的格式化函数，先用在排行榜</li><li>价格单位「万」第2步：其余页面全部改用该函数</li><li>每周分享图：洼地卡片那个大「+84」没单位也没图例</li><li>每周分享图：涨幅卡片的补充行只是把大数字又写了一遍</li><li>免费额度用完之后的引导</li><li>valueGaps 的单元测试</li><li>身份验证的审核界面（自己用）</li></ul>
+    <h2>待办（22 件）</h2>
+    <ul><li>找租金数据源 —— 能算出收益率的话，这个 App 能回答的问题就变了</li><li>到车站的距离（国土数値情報 N02，CC BY 可商用）</li><li>「我的房子」里把用来比较的那些成交本身列出来</li><li>只有町丁目排行还没做同房龄比较（口径不统一）</li><li>地区详情页放一张大的价格曲线</li><li>PLATEAU 塔楼数据扩到东京以外</li><li>到车站的距离（第1步）：最近车站和步行分钟</li><li>到车站的距离（第2步）：查新建车站的影响能不能验证</li><li>塔楼（第0步）：查摇号倍率等公开数据存不存在</li><li>留言板：没传到服务器也显示「发布成功」</li><li>别把网络失败说成「这一带成交少」第1步：区分读取成功和失败</li><li>同上 第2步：界面显示网络错误和重试</li><li>把12年前的中位数当「现在单价」显示 第1步：聚合层加上年份和年成交数</li><li>同上 第2步：剔除过旧的系列，保留的要在界面标年份</li><li>`t()` 统一加参数标签，用类型防止顺序出错</li><li>价格单位「万」第1步：做统一的格式化函数，先用在排行榜</li><li>价格单位「万」第2步：其余页面全部改用该函数</li><li>每周分享图：洼地卡片那个大「+84」没单位也没图例</li><li>每周分享图：涨幅卡片的补充行只是把大数字又写了一遍</li><li>免费额度用完之后的引导</li><li>valueGaps 的单元测试</li><li>身份验证的审核界面（自己用）</li></ul>
   </div>
 
   <div class="card done">
-    <h2>已完成（10 件）</h2>
-    <ul><li>只有町丁目排行还没做同房龄比较（口径不统一）</li><li>App 内反馈（收集用户声音的机制） <span class='when'>2026-08-02 10:43 完成</span></li><li>watchdog 捡到反馈就通知 <span class='when'>2026-08-02 10:43 完成</span></li><li>「我的房子」第1步：登记 + 估算当前价值 <span class='when'>2026-08-02 11:15 完成</span></li><li>「我的房子」第2步：附近有新成交就通知 <span class='when'>2026-08-02 11:26 完成</span></li><li>每周分享图自动生成 <span class='when'>2026-08-02 11:35 完成</span></li><li>分享图里能不能加一张小地图 <span class='when'>2026-08-02 13:10 完成</span></li><li>`t()` 参数顺序反了6处 —— 日本用户看到中文 <span class='when'>2026-08-02 21:51 完成</span></li><li>塔楼筛选 —— 能不能用 PLATEAU 的建筑高度代替 <span class='when'>2026-08-02 21:51 完成</span></li><li>把「偏贵」那一端也显示出来 <span class='when'>2026-08-02 11:35 完成</span></li></ul>
+    <h2>已完成（9 件）</h2>
+    <ul><li>App 内反馈（收集用户声音的机制） <span class='when'>2026-08-02 10:43 完成</span></li><li>watchdog 捡到反馈就通知 <span class='when'>2026-08-02 10:43 完成</span></li><li>「我的房子」第1步：登记 + 估算当前价值 <span class='when'>2026-08-02 11:15 完成</span></li><li>「我的房子」第2步：附近有新成交就通知 <span class='when'>2026-08-02 11:26 完成</span></li><li>每周分享图自动生成 <span class='when'>2026-08-02 11:35 完成</span></li><li>分享图里能不能加一张小地图 <span class='when'>2026-08-02 13:10 完成</span></li><li>`t()` 参数顺序反了6处 —— 日本用户看到中文 <span class='when'>2026-08-02 21:51 完成</span></li><li>塔楼筛选 —— 能不能用 PLATEAU 的建筑高度代替 <span class='when'>2026-08-02 21:51 完成</span></li><li>把「偏贵」那一端也显示出来 <span class='when'>2026-08-02 11:35 完成</span></li></ul>
   </div>
 
   <div class="card">

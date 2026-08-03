@@ -44,14 +44,14 @@
 </style></head><body>
 
 <h1>日本住宅価格マップ — 运行状况</h1>
-<div class="stamp">最后更新 2026-08-04 06:06:54 · 本页每 30 秒自动刷新</div>
+<div class="stamp">最后更新 2026-08-04 06:10:42 · 本页每 30 秒自动刷新</div>
 
 <div class="health dim">改善循环：正常（最后一次完成：2026-08-04 04:00，2 小时前）</div>
 <div class="three">
   <div class="seg">
     <div class="seg-label">现在</div>
     <div class="status busy"><span class="dot"></span>工作中</div>
-    <div class="seg-note">実装中：地区の詳細ページに、大きい価格曲線を出す（6 分钟前）</div>
+    <div class="seg-note">改善循环正在跑</div>
   </div>
   <div class="seg">
     <div class="seg-label">已完成</div>
@@ -60,7 +60,7 @@
   </div>
   <div class="seg">
     <div class="seg-label">下一件</div>
-    <div class="seg-next">地区详情页放一张大的价格曲线</div>
+    <div class="seg-next">地区详情页放一张大的价格曲线（待判断）</div>
     <div class="seg-note">下一轮就做这件</div>
   </div>
 </div>
@@ -70,18 +70,18 @@
     <h2>上一次用时 / 下一次预定</h2>
     <table>
       <tr><th></th><th>上一次</th><th>下一次</th></tr>
-      <tr><td>改善循环</td><td>16 分 16 秒（完了） · 04:00 结束</td><td class='mono'>马上</td></tr><tr><td>审计循环</td><td>0 分 00 秒（見送り（未着手22件・2/6）） · 06:03 结束</td><td class='mono'>08:03（还有 116 分钟）</td></tr>
+      <tr><td>改善循环</td><td>10 分 18 秒（完了） · 06:10 结束</td><td class='mono'>06:30（还有 19 分钟）</td></tr><tr><td>审计循环</td><td>0 分 00 秒（見送り（未着手22件・2/6）） · 06:03 结束</td><td class='mono'>08:03（还有 113 分钟）</td></tr>
     </table>
   </div>
 
   <div class="card">
     <h2>常驻的定时任务</h2>
-    <table><tr><td>com.tokyoarhome.analyst</td><td>待命</td></tr><tr><td>com.tokyoarhome.audit</td><td>待命</td></tr><tr><td>com.tokyoarhome.dailybackup</td><td>待命</td></tr><tr><td>com.tokyoarhome.datawatch</td><td>待命</td></tr><tr><td>com.tokyoarhome.nightshift</td><td>▶ 运行中</td></tr><tr><td>com.tokyoarhome.sense</td><td>待命</td></tr><tr><td>com.tokyoarhome.sharecard</td><td>待命</td></tr><tr><td>com.tokyoarhome.status</td><td>待命</td></tr><tr><td>com.tokyoarhome.watchdog</td><td>▶ 运行中</td></tr></table>
+    <table><tr><td>com.tokyoarhome.analyst</td><td>待命</td></tr><tr><td>com.tokyoarhome.audit</td><td>待命</td></tr><tr><td>com.tokyoarhome.dailybackup</td><td>待命</td></tr><tr><td>com.tokyoarhome.datawatch</td><td>待命</td></tr><tr><td>com.tokyoarhome.nightshift</td><td>▶ 运行中</td></tr><tr><td>com.tokyoarhome.sense</td><td>待命</td></tr><tr><td>com.tokyoarhome.sharecard</td><td>待命</td></tr><tr><td>com.tokyoarhome.status</td><td>待命</td></tr><tr><td>com.tokyoarhome.watchdog</td><td>待命</td></tr></table>
   </div>
 
   <div class="card">
     <h2>待办（22 件）</h2>
-    <ul><li>地区详情页放一张大的价格曲线</li><li>PLATEAU 塔楼数据扩到东京以外</li><li>到车站的距离（第2步）：查新建车站的影响能不能验证</li><li>塔楼（第0步）：查摇号倍率等公开数据存不存在</li><li>留言板：没传到服务器也显示「发布成功」</li><li>别把网络失败说成「这一带成交少」第1步：区分读取成功和失败</li><li>同上 第2步：界面显示网络错误和重试</li><li>把12年前的中位数当「现在单价」显示 第1步：聚合层加上年份和年成交数</li><li>同上 第2步：剔除过旧的系列，保留的要在界面标年份</li><li>札幌市和仙台市的区，没带市名就显示成「北海道 中央区」</li><li>名古屋・京都のように「測れなかった街」が、表から名前ごと消える</li><li>1通りでしか測っていない系列が、5通りで測った系列と同じ顔で並ぶ</li><li>戸建とマンションの「万円/㎡」は分母が違うのに、同じ物差しで並べている</li><li>`t()` 统一加参数标签，用类型防止顺序出错</li><li>价格单位「万」第1步：做统一的格式化函数，先用在排行榜</li><li>价格单位「万」第2步：其余页面全部改用该函数</li><li>每周分享图：洼地卡片那个大「+84」没单位也没图例</li><li>每周分享图：涨幅卡片的补充行只是把大数字又写了一遍</li><li>地图上的分析按钮，不确认也不显示剩余次数就扣掉每月 3 次免费额度</li><li>免费额度用完之后的引导</li><li>valueGaps 的单元测试</li><li>身份验证的审核界面（自己用）</li></ul>
+    <ul><li>地区详情页放一张大的价格曲线（待判断）</li><li>PLATEAU 塔楼数据扩到东京以外</li><li>到车站的距离（第2步）：查新建车站的影响能不能验证</li><li>塔楼（第0步）：查摇号倍率等公开数据存不存在</li><li>留言板：没传到服务器也显示「发布成功」</li><li>别把网络失败说成「这一带成交少」第1步：区分读取成功和失败</li><li>同上 第2步：界面显示网络错误和重试</li><li>把12年前的中位数当「现在单价」显示 第1步：聚合层加上年份和年成交数</li><li>同上 第2步：剔除过旧的系列，保留的要在界面标年份</li><li>札幌市和仙台市的区，没带市名就显示成「北海道 中央区」</li><li>名古屋・京都のように「測れなかった街」が、表から名前ごと消える</li><li>1通りでしか測っていない系列が、5通りで測った系列と同じ顔で並ぶ</li><li>戸建とマンションの「万円/㎡」は分母が違うのに、同じ物差しで並べている</li><li>`t()` 统一加参数标签，用类型防止顺序出错</li><li>价格单位「万」第1步：做统一的格式化函数，先用在排行榜</li><li>价格单位「万」第2步：其余页面全部改用该函数</li><li>每周分享图：洼地卡片那个大「+84」没单位也没图例</li><li>每周分享图：涨幅卡片的补充行只是把大数字又写了一遍</li><li>地图上的分析按钮，不确认也不显示剩余次数就扣掉每月 3 次免费额度</li><li>免费额度用完之后的引导</li><li>valueGaps 的单元测试</li><li>身份验证的审核界面（自己用）</li></ul>
   </div>
 
   <div class="card done">

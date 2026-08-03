@@ -43,14 +43,14 @@
 </style></head><body>
 
 <h1>日本住宅価格マップ — 稼働状況</h1>
-<div class="stamp">最終更新 2026-08-03 09:48:32 ・ このページは30秒ごとに自動更新</div>
+<div class="stamp">最終更新 2026-08-03 09:56:42 ・ このページは30秒ごとに自動更新</div>
 
 <div class="health dim">改善シフト：正常（最後の完了 2026-08-03 07:42 ／ 2 時間前）</div>
 <div class="three">
   <div class="seg">
     <div class="seg-label">いま</div>
     <div class="status busy"><span class="dot"></span>作業中</div>
-    <div class="seg-note">実装中：「5年」の伸びのほとんどが直近2年に集中し、2020→2022 がほぼ横ばいになっている（調査）（3分前）</div>
+    <div class="seg-note">改善シフトが実行中です</div>
   </div>
   <div class="seg">
     <div class="seg-label">やったこと</div>
@@ -59,7 +59,7 @@
   </div>
   <div class="seg">
     <div class="seg-label">つぎにやること</div>
-    <div class="seg-next">「5年」の伸びのほとんどが直近2年に集中し、2020→2022 がほぼ横ばいになっている（調査）</div>
+    <div class="seg-next">「5年」の伸びの形 — 内部は決着。外部指標との突き合わせだけ残っている（調査）</div>
     <div class="seg-note">次の実行でこれに着手します</div>
   </div>
 </div>
@@ -69,18 +69,18 @@
     <h2>前回の所要時間 / 次回の予定</h2>
     <table>
       <tr><th></th><th>前回</th><th>次回</th></tr>
-      <tr><td>改善シフト</td><td>14分37秒（完了） ・ 07:42 終了</td><td class='mono'>まもなく</td></tr><tr><td>監査シフト</td><td>0分00秒（見送り（未着手18件）） ・ 07:40 終了</td><td class='mono'>まもなく</td></tr>
+      <tr><td>改善シフト</td><td>14分33秒（完了） ・ 09:56 終了</td><td class='mono'>10:12（あと15分）</td></tr><tr><td>監査シフト</td><td>0分00秒（見送り（未着手18件）） ・ 07:40 終了</td><td class='mono'>まもなく</td></tr>
     </table>
   </div>
 
   <div class="card">
     <h2>常駐している仕組み</h2>
-    <table><tr><td>com.tokyoarhome.analyst</td><td>待機</td></tr><tr><td>com.tokyoarhome.audit</td><td>待機</td></tr><tr><td>com.tokyoarhome.dailybackup</td><td>待機</td></tr><tr><td>com.tokyoarhome.datawatch</td><td>待機</td></tr><tr><td>com.tokyoarhome.nightshift</td><td>▶ 実行中</td></tr><tr><td>com.tokyoarhome.sense</td><td>待機</td></tr><tr><td>com.tokyoarhome.sharecard</td><td>待機</td></tr><tr><td>com.tokyoarhome.status</td><td>▶ 実行中</td></tr><tr><td>com.tokyoarhome.watchdog</td><td>待機</td></tr></table>
+    <table><tr><td>com.tokyoarhome.analyst</td><td>待機</td></tr><tr><td>com.tokyoarhome.audit</td><td>待機</td></tr><tr><td>com.tokyoarhome.dailybackup</td><td>待機</td></tr><tr><td>com.tokyoarhome.datawatch</td><td>▶ 実行中</td></tr><tr><td>com.tokyoarhome.nightshift</td><td>▶ 実行中</td></tr><tr><td>com.tokyoarhome.sense</td><td>待機</td></tr><tr><td>com.tokyoarhome.sharecard</td><td>待機</td></tr><tr><td>com.tokyoarhome.status</td><td>待機</td></tr><tr><td>com.tokyoarhome.watchdog</td><td>待機</td></tr></table>
   </div>
 
   <div class="card">
-    <h2>いま抱えている仕事（22件）</h2>
-    <ul><li>「5年」の伸びのほとんどが直近2年に集中し、2020→2022 がほぼ横ばいになっている（調査）</li><li>名古屋市が全ランキングから1区も入っていない — カバー率60%の壁を確かめる（調査）</li><li>地図の分析ボタンが、確認も残数表示も無しに月3回の無料枠を減らす</li><li>町丁目ランキングだけ、まだ条件をそろえていない</li><li>地区の詳細ページに、大きい価格曲線を出す</li><li>PLATEAU を東京以外にも広げる</li><li>駅からの距離（第1段）：最寄り駅と徒歩分数</li><li>駅からの距離（第2段）：新駅の効果を検証できるか調査</li><li>タワーマンション（第0段）：抽選倍率など、塔楼の公開データが存在するか調査</li><li>掲示板の投稿は、サーバーに届かなくても「投稿完了！」と出る</li><li>通信失敗を「周辺の成約が少ない」と言わない — 第1段：読み込みの成否を区別する</li><li>同 — 第2段：画面に通信エラーと再試行を出す</li><li>12年前の中央値を「現在の㎡単価」として出している — 第1段：集計側に年と年間件数を持たせる</li><li>同 — 第2段：古い系列を除外し、残すなら年を画面に出す</li><li>`t()` を引数ラベル付きに統一して、順序事故を型で防ぐ</li><li>価格の単位「万」— 第1段：共通の価格書式関数を作り、ランキング画面に通す</li><li>価格の単位「万」— 第2段：残りの画面を全部その関数に通す</li><li>週次シェア画像：割安カードの大きな「+84」に単位も凡例も無い</li><li>週次シェア画像：上昇率カードの補足行が、大きな数字をもう一度書いているだけ</li><li>無料枠を使い切ったあとの導線</li><li>valueGaps の単体テスト</li><li>本人確認の審査画面（自分用）</li></ul>
+    <h2>いま抱えている仕事（23件）</h2>
+    <ul><li>「5年」の伸びの形 — 内部は決着。外部指標との突き合わせだけ残っている（調査）</li><li>`p2`（直近の勢い）が `p5` の内側に入っていない — 上の調査で見つかった実害</li><li>名古屋市が全ランキングから1区も入っていない — カバー率60%の壁を確かめる（調査）</li><li>地図の分析ボタンが、確認も残数表示も無しに月3回の無料枠を減らす</li><li>町丁目ランキングだけ、まだ条件をそろえていない</li><li>地区の詳細ページに、大きい価格曲線を出す</li><li>PLATEAU を東京以外にも広げる</li><li>駅からの距離（第1段）：最寄り駅と徒歩分数</li><li>駅からの距離（第2段）：新駅の効果を検証できるか調査</li><li>タワーマンション（第0段）：抽選倍率など、塔楼の公開データが存在するか調査</li><li>掲示板の投稿は、サーバーに届かなくても「投稿完了！」と出る</li><li>通信失敗を「周辺の成約が少ない」と言わない — 第1段：読み込みの成否を区別する</li><li>同 — 第2段：画面に通信エラーと再試行を出す</li><li>12年前の中央値を「現在の㎡単価」として出している — 第1段：集計側に年と年間件数を持たせる</li><li>同 — 第2段：古い系列を除外し、残すなら年を画面に出す</li><li>`t()` を引数ラベル付きに統一して、順序事故を型で防ぐ</li><li>価格の単位「万」— 第1段：共通の価格書式関数を作り、ランキング画面に通す</li><li>価格の単位「万」— 第2段：残りの画面を全部その関数に通す</li><li>週次シェア画像：割安カードの大きな「+84」に単位も凡例も無い</li><li>週次シェア画像：上昇率カードの補足行が、大きな数字をもう一度書いているだけ</li><li>無料枠を使い切ったあとの導線</li><li>valueGaps の単体テスト</li><li>本人確認の審査画面（自分用）</li></ul>
   </div>
 
   <div class="card done">
